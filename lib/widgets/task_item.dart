@@ -152,6 +152,7 @@ class TaskItem extends StatelessWidget {
                               if (task.isCompleted) ...[
                                 const SizedBox(width: 8),
                                 Container(
+                                  key: Key('task_completed_badge_${task.id}'),
                                   padding: const EdgeInsets.symmetric(
                                     horizontal: 6,
                                     vertical: 1.5,
